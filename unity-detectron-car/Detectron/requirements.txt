@@ -1,0 +1,8 @@
+tensorflow
+detectron2
+numpy
+opencv-python
+matplotlib
+Pillow
+scikit-image
+requests

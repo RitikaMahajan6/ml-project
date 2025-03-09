@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene>
+  <GameObjects>
+    <GameObject name="Car">
+      <Transform>
+        <Position x="0" y="0" z="0"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+      <Components>
+        <Component type="Rigidbody">
+          <Mass>1</Mass>
+          <Drag>0</Drag>
+          <AngularDrag>0.05</AngularDrag>
+          <IsKinematic>false</IsKinematic>
+        </Component>
+        <Component type="ObstacleDetection"/>
+      </Components>
+    </GameObject>
+    <GameObject name="Camera">
+      <Transform>
+        <Position x="0" y="5" z="-10"/>
+        <Rotation x="20" y= "0" z="0" w="1"/>
+        <Scale x="1" y="1" z="1"/>
+      </Transform>
+      <Components>
+        <Component type="Camera">
+          <FieldOfView>60</FieldOfView>
+        </Component>
+      </Components>
+    </GameObject>
+  </GameObjects>
+  <Settings>
+    <Gravity>
+      <Value>-9.81</Value>
+    </Gravity>
+  </Settings>
+</Scene>
